@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Lab1Android</string>
+    <string name="app_name">Lab!Android</string>
+    <string name="departure">Пункт відправлення</string>
+    <string name="arrival">Пункт прибуття</string>
+    <string name="select_time">Оберіть час</string>
+    <string name="ok_button">OK</string>
 </resources>
