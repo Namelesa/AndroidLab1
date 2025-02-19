@@ -1,5 +1,6 @@
 package com.example.lab1android
 
+import android.annotation.SuppressLint
 import android.app.TimePickerDialog
 import android.os.Bundle
 import android.widget.Button
@@ -15,6 +16,7 @@ class InputFragment : Fragment(R.layout.input_fragment) {
     private lateinit var editTime: TextInputEditText
     private lateinit var btnOk: Button
 
+    @SuppressLint("DefaultLocale")
     override fun onViewCreated(view: android.view.View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -23,7 +25,6 @@ class InputFragment : Fragment(R.layout.input_fragment) {
         editTime = view.findViewById(R.id.editTime)
         btnOk = view.findViewById(R.id.btnOk)
 
-        // Обработчик для выбора времени
         editTime.setOnClickListener {
             val calendar = Calendar.getInstance()
             val hour = calendar.get(Calendar.HOUR_OF_DAY)

@@ -1,5 +1,6 @@
 package com.example.lab1android
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -10,6 +11,7 @@ class ResultFragment : Fragment(R.layout.result_fragment) {
     private lateinit var textView: TextView
     private lateinit var btnCancel: Button
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: android.view.View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -23,7 +25,6 @@ class ResultFragment : Fragment(R.layout.result_fragment) {
         textView.text = "Ви обрали:\n🚉 Відправлення: $departure\n🏁 Прибуття: $arrival\n⏰ Час: $time"
 
         btnCancel.setOnClickListener {
-            // Очистить поля ввода в InputFragment и покажет его снова
             val inputFragment = InputFragment()
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, inputFragment)
