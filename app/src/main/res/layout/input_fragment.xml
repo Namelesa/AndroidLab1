@@ -82,4 +82,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/purple_500" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history"
+        app:cornerRadius="24dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnOk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple_500" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

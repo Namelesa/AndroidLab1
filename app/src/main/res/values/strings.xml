@@ -6,4 +6,9 @@
     <string name="ok_button">OK</string>
     <string name="resut">Result</string>
     <string name="cancel">Cancel</string>
+    <string name="history">Відкрити історію</string>
+    <string name="delete">Видалити</string>
+    <string name="info_ticket">Інформація квитка</string>
+    <string name="back">Назад</string>
+    <string name="edit">Редагувати</string>
 </resources>
